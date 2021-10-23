@@ -14,3 +14,13 @@ print("Hello, Friend!")
 + Set Types:	`set`, `frozenset`
 + Boolean Type:	`bool`
 + Binary Types:	`bytes`, `bytearray`, `memoryview`
+
+## Variables
+A variable is created from the moment you assign a variable to it
+
+```py
+x = 5
+y = "String"
+print(x)
+print(y)
+```
