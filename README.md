@@ -31,6 +31,6 @@ print(y)
 ## Lists
 List items are ordered, changeable, and allow duplicate values.
 
-``py
+```py
 mylist = ["orange", "pink", "green"]
 ```
