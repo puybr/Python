@@ -26,7 +26,7 @@ print(x)
 print(y)
 ```
 
-> There are 4 built-in data types used to store _collections_ of data; **List**, **Tuple**, **Set**, and **Dictionary**.
+> There are 4 built-in data types used to store _collections_ of data: **List**, **Tuple**, **Set**, & **Dictionary**.
 
 ## Lists
 List items are ordered, changeable, and allow duplicate values.
@@ -49,15 +49,14 @@ Set items are unordered, unchangeable, and **do not** allow duplicate values.
 myset = {"orange", "pink", "green"}
 ```
 
-## Dictionary
+## Dictionaries
 Dictionary items are ordered, changeable, and does not allow duplicates. They are presented in `key:value` pairs, and can be referred to by using the key name.
 
 ```py
-thisdict = {
+mydict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-print(thisdict)
 ```
 
