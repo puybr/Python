@@ -60,3 +60,5 @@ mydict = {
 }
 ```
 
+> Note: You can use LISTS as ARRAYS, however, to work with arrays in Python you will have to import a library, like the `NumPy` library.
+
