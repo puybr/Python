@@ -3,6 +3,7 @@
 Created by _Guido van Rossum_, and released in 1991.
 
 ```py
+# This is a comment
 print("Hello, Friend!")
 ```
 
@@ -26,3 +27,10 @@ print(y)
 ```
 
 > There are 4 built-in data types used to store _collections_ of data; **List**, **Tuple**, **Set**, and **Dictionary**.
+
+## Lists
+List items are ordered, changeable, and allow duplicate values.
+
+``py
+mylist = ["orange", "pink", "green"]
+```
