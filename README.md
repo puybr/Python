@@ -16,7 +16,7 @@ print("Hello, Friend!")
 + Binary Types:	`bytes`, `bytearray`, `memoryview`
 
 ## Variables
-A variable is created from the moment you assign a variable to it
+A variable is created from the moment you assign a value to it
 
 ```py
 x = 5
