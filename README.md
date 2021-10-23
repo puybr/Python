@@ -24,3 +24,5 @@ y = "String"
 print(x)
 print(y)
 ```
+
+> There are 4 built-in data types used to store _collections_ of data; **List**, **Tuple**, **Set**, and **Dictionary**.
