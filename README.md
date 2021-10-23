@@ -34,3 +34,30 @@ List items are ordered, changeable, and allow duplicate values.
 ```py
 mylist = ["orange", "pink", "green"]
 ```
+
+## Tuples
+A tuple is a collection of data which is ordered, unchangeable, and allows duplicate values.
+
+```py
+mytuple = ("orange", "pink", "green")
+```
+
+## Sets
+Set items are unordered, unchangeable, and **do not** allow duplicate values.
+
+```py
+myset = {"orange", "pink", "green"}
+```
+
+## Dictionary
+Dictionary items are ordered, changeable, and does not allow duplicates. They are presented in `key:value` pairs, and can be referred to by using the key name.
+
+```py
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+```
+
