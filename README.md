@@ -99,6 +99,8 @@ print(str(number) + " x 10 = " + str(answer))
 | Division              | /             |
 | Modulus               | %             |
 
+# If Statements
+
 ```py
 userInput = input("Enter your word here: ").lower()
 forward = userInput
