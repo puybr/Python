@@ -80,3 +80,4 @@ number = int(input("Please enter a number"))
 answer = number * 10
 print(str(number) + " x 10 = " + str(answer))
 ```
+> The `print()` function can only work with string arguments. By default anything entered into an input is a string.
