@@ -26,6 +26,8 @@ print(x)
 print(y)
 ```
 
+Variables to hold user input: `name = input("Enter your name: ")`
+
 > There are 4 built-in data types used to store _collections_ of data: **List**, **Tuple**, **Set**, & **Dictionary**.
 
 ## Lists
