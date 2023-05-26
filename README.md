@@ -14,6 +14,7 @@ print("Hello, Friend!")
    + `"Python"` **Backward Indexing**: `-6`, `-5`, `-4`, `-3`, `-2`, `-1`
    + `len()`: `print(len("Hello World!"))`
    + Slice a string: `print(veryLongWord[0:5])`
+   + String manipulation and functions: `astring.upper()`, `astring.lower()` `astring.replace("$", " ")`, `astring.strip('*')`
 + Numeric Types:	`int`, `float`, `complex`
 + Sequence Types:	`list`, `tuple`, `range`
 + Mapping Type:	`dict`
