@@ -69,3 +69,14 @@ mydict = {
 
 > Note: You can use LISTS as ARRAYS, however, to work with arrays in Python you will have to import a library, like the `NumPy` library.
 
+## Casting
+Taking different types of data and converting them into different types for different purposes.
++ `str()` - converts an argument to a string
++ `int()` - converts an argument to an integer
++ `float()` - converts an argument to a float
+
+```py
+number = int(input("Please enter a number"))
+answer = number * 10
+print(str(number) + " x 10 = " + str(answer))
+```
