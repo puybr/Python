@@ -9,6 +9,11 @@ print("Hello, Friend!")
 
 ## Data Types
 + Text Type:	`str`
+   + Concatenation of Strings: `FullName = Name + " " + Surname`
+   + `"Python"` **Forward Indexing**: `0`, `1`, `2`, `3`, `4`, `5`
+   + `"Python"` **Backward Indexing**: `-6`, `-5`, `-4`, `-3`, `-2`, `-1`
+   + `len()`: `print(len("Hello World!"))`
+   + Slice a string: `print(veryLongWord[0:5])`
 + Numeric Types:	`int`, `float`, `complex`
 + Sequence Types:	`list`, `tuple`, `range`
 + Mapping Type:	`dict`
