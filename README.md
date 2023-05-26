@@ -98,3 +98,13 @@ print(str(number) + " x 10 = " + str(answer))
 | Multiplication        | *             |
 | Division              | /             |
 | Modulus               | %             |
+
+```py
+userInput = input("Enter your word here: ").lower()
+forward = userInput
+reverse = userInput[::-1]
+if forward == reverse:
+  print("Your word is a palindrome!")
+else:
+  print("Sorry, your word is not a palindrome!")
+```
