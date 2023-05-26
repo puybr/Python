@@ -15,6 +15,7 @@ print("Hello, Friend!")
    + `len()`: `print(len("Hello World!"))`
    + Slice a string: `print(veryLongWord[0:5])`
    + String manipulation and functions: `astring.upper()`, `astring.lower()`, `astring.replace("$", " ")`, `astring.strip('*')`
+   + Reverse a string using the slicing operator, `[::-1]`
 + Numeric Types:	`int`, `float`, `complex`
 + Sequence Types:	`list`, `tuple`, `range`
 + Mapping Type:	`dict`
