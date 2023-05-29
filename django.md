@@ -6,5 +6,5 @@
 4. Install Django: `python -m pip install django`
 5. Check Django version: `django-admin --version`
 6. `django-admin startproject <my_project_name>`
-7. Run the project: `python manage.py runserver`
+7. Run the project: `cd <my_project_name>` > `python manage.py runserver`
 8. Open your browser @ 127.0.0.1:8000
