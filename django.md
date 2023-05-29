@@ -1,6 +1,6 @@
 # Django
 
-1. `mkdir <new-project>`
+1. `mkdir <new-project>` > `cd <new-project>`
 2. Virtual Environment: `python -m venv <venvname>`
 3. Acticate the environment: `<venvname>\Scripts\activate.bat`
 4. Install Django: `python -m pip install Django`
