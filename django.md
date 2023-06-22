@@ -11,8 +11,25 @@
 9. Create App: `python manage.py startapp <appname>`
 10. `code .`
 
+Database connection in `settings.py`:
 
-+ Run the site:
+```sh
+ALLOWED_HOSTS = ['*']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': env('DATABASE_NAME'),
+        'USER': env('DATABASE_USER'),
+        'PASSWORD': env('DATABASE_PASS'),
+        'HOST': env('DATABASE_HOST'),
+        'PORT': '3306',
+    }
+}
+```
+
+
++ Run the site and hooking up the database:
 ```sh
 myenv\Scripts\activate.bat
 python manage.py makemigrations
@@ -23,15 +40,13 @@ python manage.py migrate
 
 ## Dockerize
 
-+ The `Dockerfile`:
++ The `Dockerfile`, also add a `requirements.txt` (Django==4.2.2) file:
 ```sh
 FROM python:3
 
 ENV PYTHONUNBUFFERED=1
 
 WORKDIR /code
-
-COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 RUN pip install pillow
@@ -70,19 +85,4 @@ docker container ps
 docker login
 docker tag sighthoundrescue:latest sp00kysp00k/sighthoundrescue:latest
 docker push sp00kysp00k/sighthoundrescue:latest
-```
-
-Database connection:
-
-```sh
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': env('DATABASE_NAME'),
-        'USER': env('DATABASE_USER'),
-        'PASSWORD': env('DATABASE_PASS'),
-        'HOST': env('DATABASE_HOST'),
-        'PORT': '3306',
-    }
-}
 ```
