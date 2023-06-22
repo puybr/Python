@@ -12,7 +12,7 @@
 10. `code .`
 
 There's a good starter tutorial [here](https://www.w3schools.com/django/index.php)
-Database connection in `settings.py`:
++ Database connection in `settings.py`:
 
 ```sh
 ALLOWED_HOSTS = ['*']
@@ -39,7 +39,7 @@ python manage.py makemigrations
 py manage.py runserver
 ```
 
-## Dockerize
+# 🐋 Dockerize
 
 + The `Dockerfile`, also add a `requirements.txt` (Django==4.2.2) file:
 ```sh
