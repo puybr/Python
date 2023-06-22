@@ -11,6 +11,7 @@
 9. Create App: `python manage.py startapp <appname>`
 10. `code .`
 
+There's a good starter tutorial [here](https://www.w3schools.com/django/index.php)
 Database connection in `settings.py`:
 
 ```sh
@@ -32,10 +33,10 @@ DATABASES = {
 + Run the site and hooking up the database:
 ```sh
 myenv\Scripts\activate.bat
-python manage.py makemigrations
-py manage.py runserver
 python manage.py migrate auth
 python manage.py migrate
+python manage.py makemigrations
+py manage.py runserver
 ```
 
 ## Dockerize
