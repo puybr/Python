@@ -10,3 +10,79 @@
 8. Open your browser @ 127.0.0.1:8000
 9. Create App: `python manage.py startapp <appname>`
 10. `code .`
+
+
++ Run the site:
+```sh
+myenv\Scripts\activate.bat
+python manage.py makemigrations
+py manage.py runserver
+python manage.py migrate auth
+python manage.py migrate
+```
+
+## Dockerize
+
++ The `Dockerfile`:
+```sh
+FROM python:3
+
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /code
+
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
+RUN pip install pillow
+RUN pip install django-bootstrap-v5
+RUN pip install mysqlclient
+RUN pip install django-environ
+
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["python","manage.py","runserver","0.0.0.0:8000"]
+```
+
+The `docker-compose.yml` file (also add a `requirements.txt`)
+
+```sh
+version: "3.9"
+
+services:
+  django:
+    image: django-hello-world:0.0.1
+    build: .
+    ports:
+      - "8000:8000"
+```
+
++ Build
+```sh
+docker compose up --build
+docker build --tag sighthoundrescue:latest .
+docker run --name sighthoundrescue -d -p 8000:8000 sighthoundrescue:latest
+docker container ps
+
+docker login
+docker tag sighthoundrescue:latest sp00kysp00k/sighthoundrescue:latest
+docker push sp00kysp00k/sighthoundrescue:latest
+```
+
+Database connection:
+
+```sh
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': env('DATABASE_NAME'),
+        'USER': env('DATABASE_USER'),
+        'PASSWORD': env('DATABASE_PASS'),
+        'HOST': env('DATABASE_HOST'),
+        'PORT': '3306',
+    }
+}
+```
