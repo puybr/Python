@@ -111,11 +111,7 @@ else:
   print("Sorry, your word is not a palindrome!")
 ```
 
-- - -
-
 ## [Django](django.md)
-
-- - -
 
 ## 🤖 [Job Bot](job-bot.py)
 A Job Bot written in Python using the Selenium WebDriver
