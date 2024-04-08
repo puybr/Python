@@ -112,6 +112,7 @@ else:
 ```
 
 ## [Django](django.md)
+A high-level Python web framework
 
 ## 🤖 [Job Bot](job-bot.py)
 A Job Bot written in Python using the Selenium WebDriver
