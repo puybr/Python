@@ -111,8 +111,8 @@ else:
   print("Sorry, your word is not a palindrome!")
 ```
 
-## [Recursive Fibonacci Sequence](fibs)
-A recursive function with unit tests
+## 🐚 [Recursive Fibonacci Sequence](fibs)
+A recursive solution with unit tests
 
 ## 🌐 [Django](django.md)
 A high-level Python web framework
