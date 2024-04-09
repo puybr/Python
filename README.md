@@ -114,6 +114,9 @@ else:
 ## 🐚 [Recursive Fibonacci Sequence](fibs)
 A recursive solution with unit tests
 
+## 🥡 [Merge Sort](merge_sort)
+An algorithm which uses the 'divide and conquer' approach of recursion _(including unit tests)_
+
 ## 🌐 [Django](django.md)
 A high-level Python web framework
 
