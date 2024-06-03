@@ -111,6 +111,23 @@ else:
   print("Sorry, your word is not a palindrome!")
 ```
 
+# Adding Python to `PATH` in `.vscode/settings.json`
+
+```json
+{
+    "terminal.integrated.env.osx": {
+      "PYTHONPATH": "${workspaceFolder}/libs",
+    },
+    "terminal.integrated.env.linux": {
+      "PYTHONPATH": "${workspaceFolder}/libs",
+    },
+    "terminal.integrated.env.windows": {
+      "PYTHONPATH": "${workspaceFolder}/libs",
+    },
+    "python.envFile": "${workspaceFolder}/.env"
+}
+```
+
 ## 🐚 [Recursive Fibonacci Sequence](fibs)
 A recursive solution with unit tests
 
