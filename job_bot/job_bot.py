@@ -10,7 +10,7 @@ load_dotenv()
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 driver = webdriver.Chrome(".\chromedriver.exe", options=options)
-driver.get("https://www.linkedin.com/jobs/search/?f_AL=true&f_E=2&f_WT=2&geoId=101165590&keywords=python&location=United%20Kingdom")
+driver.get("https://www.linkedin.com/jobs/search/XXXXX")
 
 signin_button = driver.find_element_by_class_name("nav__button-secondary")
 signin_button.click()
