@@ -137,7 +137,7 @@ A recursive solution with unit tests
 ## [Merge Sort](merge_sort)
 An algorithm which uses the 'divide and conquer' approach of recursion _(including unit tests)_
 
-## [Job Bot](job_bot)
+## [Job Bot](jobbot)
 A Job Bot written in Python using the Selenium WebDriver
 
 ## [Lambda Functions](lambda)
