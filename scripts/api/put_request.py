@@ -1,7 +1,7 @@
 import requests
 import json
 
-def put_shovel(url:str, credentials:tuple):
+def put_data(url:str, credentials:tuple):
     path = f'/api/parameters'
     headers = {"Content-Type": "application/json"}
     data = {"component": "1", "component": "2"}
@@ -12,4 +12,4 @@ if __name__ == "__main__":
     # Add inputs here
     url = 'https://localhost'
     credentials = ('username', '*****')
-    put_shovel(url, credentials)
+    put_data(url, credentials)
