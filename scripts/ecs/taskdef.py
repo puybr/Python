@@ -22,10 +22,10 @@ def convert_secret_to_json():
         dotenv = '.env'
     with open(dotenv, 'r') as f:
         content = f.readlines()
-        data = list([x.strip().split('=') for x in content if '=' not in x and not x.startswith('#')])
+        data = [x.strip().split('=') for x in content if '=' not in x and not x.startswith('#')]
     secrets = []
     for key in data:
-        secrets.append({"name":str(key[0]),"valueFrom":f"${{SECRET_ARN}}:{str(key[0])}::"})
+        secrets.append({"name":str(key),"valueFrom":f"${{SECRET_ARN}}:{str(key)}::"})
     return list(secrets)
 
 if __name__ == "__main__":
