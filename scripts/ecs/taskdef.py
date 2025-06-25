@@ -8,8 +8,7 @@ def convert_env_to_json():
         dotenv = '.env'
     with open(dotenv, 'r') as f:
         content = f.readlines()
-        content = dict([x.strip().split('=') for x in content if '=' in x and not x.startswith('#')])
-        data = dict(content)
+        data = dict([x.strip().split('=') for x in content if '=' in x and not x.startswith('#')])
     environment = []
     for key in data.keys():
         environment.append({"name":key,"value":data[key]})
