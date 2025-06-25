@@ -25,7 +25,7 @@ def convert_secret_to_json():
         data = [x.strip().split('=') for x in content if '=' not in x and not x.startswith('#')]
     secrets = []
     for key in data:
-        secrets.append({"name":str(key),"valueFrom":f"${{SECRET_ARN}}:{str(key)}::"})
+        secrets.append({"name":str(key[0]),"valueFrom":f"${{SECRET_ARN}}:{str(key[0])}::"})
     return list(secrets)
 
 if __name__ == "__main__":
